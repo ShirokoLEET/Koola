@@ -10,6 +10,7 @@ activityCompose = "1.10.0"
 composeBom = "2025.01.01"
 lifecycleRuntimeKtx = "2.8.7"
 roomCommon = "2.6.1"
+cardview = "1.0.0"
 #xposed-api = "100"
 #xposed-service = "100-1.0.0"
 
@@ -33,6 +34,7 @@ androidx-material3 = { group = "androidx.compose.material3", name = "material3" 
 xposed-api = { module = "de.robv.android.xposed:api", version.ref = "api" }
 shadowhook = { module = "com.bytedance.android:shadowhook", version = "1.1.1" }
 androidx-room-common = { group = "androidx.room", name = "room-common", version.ref = "roomCommon" }
+androidx-cardview = { group = "androidx.cardview", name = "cardview", version.ref = "cardview" }
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }

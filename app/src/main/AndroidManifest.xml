@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -15,6 +17,12 @@
         tools:targetApi="31"
         android:multiArch="true"
         android:extractNativeLibs="false">
+
+        <service
+            android:name=".ui.service.FloatingWindowService"
+            android:enabled="true"
+            android:exported="false" />
+
         <activity android:name="cn.peyriat.koola.ui.MainActivity" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -73,6 +73,7 @@ android {
 }
 
 dependencies {
+    implementation(libs.androidx.cardview)
     implementation(libs.shadowhook)
     implementation(libs.androidx.room.common)
     compileOnly(libs.xposed.api)
